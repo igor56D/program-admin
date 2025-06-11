@@ -387,9 +387,9 @@ class ProgramAdmin:
                             new_account_pubkey=mapping_0_keypair.public_key,
                             # FIXME: Change to minimum rent-exempt amount
                             lamports=await self.fetch_minimum_balance(
-                                4*MAPPING_ACCOUNT_SIZE
+                                6*MAPPING_ACCOUNT_SIZE
                             ),
-                            space=2*MAPPING_ACCOUNT_SIZE,
+                            space=3*MAPPING_ACCOUNT_SIZE,
                             program_id=self.program_key,
                         )
                     )
